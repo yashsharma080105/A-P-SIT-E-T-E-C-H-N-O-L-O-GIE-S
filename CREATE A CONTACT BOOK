@@ -10,7 +10,7 @@ class ContactBook:
             'address': address
         }
         self.contacts.append(contact)
-        print(f"Contact ' {name} ' added successfully.")
+        print(f"Contact '{name}' added successfully.")
 
     def view_contacts(self):
         if not self.contacts:
@@ -23,7 +23,7 @@ class ContactBook:
     def search_contact(self, search_term):
         found_contacts = []
         for contact in self.contacts:
-            if (search_term.lower() in contact['name'].lower()) or (search_term in contact['phone_number']):
+            if (search_term.lower() in contact["name"].lower()) or (search_term in contact["phone_number"]):
                 found_contacts.append(contact)
 
         if not found_contacts:
